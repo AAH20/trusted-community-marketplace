@@ -1,0 +1,27 @@
+test_admin_missing (test_marketplace.ConnectorTests.test_admin_missing) ... ok
+test_rejected_boundaries (test_marketplace.ConnectorTests.test_rejected_boundaries) ... ok
+test_revoked (test_marketplace.ConnectorTests.test_revoked) ... ok
+test_valid_preflight (test_marketplace.ConnectorTests.test_valid_preflight) ... ok
+test_agent_cannot_award (test_marketplace.MarketTests.test_agent_cannot_award) ... ok
+test_agent_cannot_submit (test_marketplace.MarketTests.test_agent_cannot_submit) ... ok
+test_audit_access (test_marketplace.MarketTests.test_audit_access) ... ok
+test_catalog_consent (test_marketplace.MarketTests.test_catalog_consent) ... ok
+test_copy_isolation (test_marketplace.MarketTests.test_copy_isolation) ... ok
+test_cross_org_request (test_marketplace.MarketTests.test_cross_org_request) ... ok
+test_draft_cannot_award (test_marketplace.MarketTests.test_draft_cannot_award) ... ok
+test_duplicate_award (test_marketplace.MarketTests.test_duplicate_award) ... ok
+test_duplicate_id_atomic (test_marketplace.MarketTests.test_duplicate_id_atomic) ... ok
+test_full_demo (test_marketplace.MarketTests.test_full_demo) ... ok
+test_incomplete_acceptance (test_marketplace.MarketTests.test_incomplete_acceptance) ... ok
+test_invited_supplier_read (test_marketplace.MarketTests.test_invited_supplier_read) ... ok
+test_pay_disabled (test_marketplace.MarketTests.test_pay_disabled) ... ok
+test_price_validation (test_marketplace.MarketTests.test_price_validation) ... ok
+test_revocation (test_marketplace.MarketTests.test_revocation) ... ok
+test_rework (test_marketplace.MarketTests.test_rework) ... ok
+test_supplier_cannot_accept (test_marketplace.MarketTests.test_supplier_cannot_accept) ... ok
+test_wrong_actor_delivery (test_marketplace.MarketTests.test_wrong_actor_delivery) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.127s
+
+OK

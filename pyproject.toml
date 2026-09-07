@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "trusted-community-marketplace"
+version = "0.1.0"
+description = "Permissioned professional services marketplace reference with human approval and engagement isolation"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+[project.urls]
+Homepage = "https://a2zsoc.com"
+Repository = "https://github.com/AAH20/trusted-community-marketplace"
+[tool.setuptools.packages.find]
+include = ["marketplace*"]

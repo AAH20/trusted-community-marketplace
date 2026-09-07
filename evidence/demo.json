@@ -1,0 +1,40 @@
+{
+  "mode": "synthetic",
+  "engagement": {
+    "artifact": "synthetic://permission-report-v1",
+    "cents": 25000,
+    "checks": {
+      "Permissions reviewed": true,
+      "Scope documented": true
+    },
+    "criteria": [
+      "Scope documented",
+      "Permissions reviewed"
+    ],
+    "payment": "disabled",
+    "proposal": "proposal-1",
+    "scope": "Review supplied synthetic configuration. No live Discord or Slack access.",
+    "state": "accepted",
+    "supplier": "provider-a"
+  },
+  "blocked": [
+    "agent_commit",
+    "cross_tenant_read"
+  ],
+  "events": [
+    [
+      "community-a:buyer:human",
+      "buyer_approved_reference_engagement"
+    ],
+    [
+      "provider-a:supplier:human",
+      "milestone_submitted"
+    ],
+    [
+      "community-a:buyer:human",
+      "milestone_accepted"
+    ]
+  ],
+  "production_ready": false,
+  "money_moved": false
+}
