@@ -1,0 +1,56 @@
+{
+  "mode": "synthetic_http",
+  "passed": 12,
+  "checks": [
+    {
+      "check": "csrf",
+      "status": 403
+    },
+    {
+      "check": "origin",
+      "status": 403
+    },
+    {
+      "check": "host",
+      "status": 403
+    },
+    {
+      "check": "request",
+      "status": 200
+    },
+    {
+      "check": "draft",
+      "status": 200
+    },
+    {
+      "check": "agent-submit",
+      "status": 400
+    },
+    {
+      "check": "submit",
+      "status": 200
+    },
+    {
+      "check": "engage",
+      "status": 200
+    },
+    {
+      "check": "deliver",
+      "status": 200
+    },
+    {
+      "check": "rework",
+      "status": 200
+    },
+    {
+      "check": "deliver",
+      "status": 200
+    },
+    {
+      "check": "accept",
+      "status": 200
+    }
+  ],
+  "browser_visual_verification": "unavailable: browser tool timed out",
+  "external_services_called": false
+}

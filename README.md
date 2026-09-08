@@ -26,7 +26,7 @@ The demonstration creates a buyer request, lets a supplier agent draft a proposa
 
 ## What does not ship
 
-This is a trusted-local-call domain prototype, not a production multi-tenant service. Caller-created Principal objects are not authenticated identities. There is no public HTTP API, dashboard, verified credentials provider, signed delegation, cryptographic human proof, payment/escrow, legally binding signature, dispute adjudication, live Slack MCP or Discord connection, model invocation or autonomous moderation.
+This is a trusted-local-call domain prototype, not a production multi-tenant service. Caller-created Principal objects are not authenticated identities. There is no production HTTP API or dashboard, verified credentials provider, signed delegation, cryptographic human proof, payment/escrow, legally binding signature, dispute adjudication, live Slack MCP or Discord connection, model invocation or autonomous moderation.
 
 The local DB administrator can change records and recompute audit hashes. The log does not attest payload history. SQLite use is single-process reference logic, not verified concurrent procurement. Do not expose these methods to untrusted clients.
 
@@ -43,3 +43,13 @@ The [Permissioned Contributor Agent](https://github.com/AAH20/permissioned-contr
 - [Public and private boundaries](docs/publication.md)
 
 Apache-2.0. Contributions and support: [A2Z SOC](https://a2zsoc.com). This repository is an inspectable reference foundation for a much broader professional services marketplace.
+
+## Interactive local demonstration
+
+```sh
+python -m marketplace.web
+```
+
+Open `http://127.0.0.1:8765`. Exercise the catalog, buyer request, supplier agent draft, blocked agent commitment, human approvals, delivery and acceptance. Restart the process to reset synthetic state. Role buttons are explicit simulations, not login. The server binds only to loopback and checks Host, Origin and CSRF tokens. Do not proxy or expose it publicly. No real records should be entered.
+
+HTTP verification: 12 synthetic checks passed, including the complete rework/acceptance flow and rejected CSRF, Origin and Host checks. See [HTTP evidence](evidence/http-check.json). Browser visual verification was unavailable because the browser tool timed out.
